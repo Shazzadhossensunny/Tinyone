@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+   font-family: 'PT Sans', sans-serif;
+   font-size: 14px;
+   line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	 font-family: 'PT Sans', sans-serif;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+
+/*****************************************************
+                global css code
+******************************************************/
+/*header-section css start*/
+.header-section{
+	width: 100%;
+	background: #fcdb00;
+	padding: 20px 0px;
+}
+
+.header-section .navbar-light .navbar-nav .nav-link {
+    color: #010101;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.header-section .slider-section{
+    width: 100%;
+    padding: 60px 0px;
+  
+}
+
+.header-section .slider-section .title{
+   width: 100%:;
+   text-align: left
+   padding: 30px;
+}
+
+.header-section .slider-section .title h1{
+	
+font-size: 40px;
+	
+color: #010101;
+	
+font-weight: bold;
+	
+line-height: 40px;
+}
+.header-section .slider-section .title h6{
+	
+font-weight: 400;
+	
+font-size: 28px;
+	
+color: #313841;
+	
+margin: 30px 0px;
+}
+.header-section .slider-section .title p{
+     font-size: 20px;
+     line-height: 28px;
+     font-weight: 400;
+     color: #82793e;
+}
+.header-section .slider-section .title .inner-img{	
+     margin-top: 45px;	
+     width: 50%;
+}
+
+.header-section .navbar-light .navbar-nav .nav-link {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.header-section .navbar-light .navbar-nav .nav-link:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+.header-section .navbar-light .navbar-nav .nav-link:hover:after {
+  -webkit-animation: circle 2.5s ease-in forwards;
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+
+
+/*header-section css end*/
+
+
+/*feature section css start*/
+.featurte-section{
+	width: 100%;
+	padding: 80px 0px;
+}
+
+
+.featurte-section .title{
+	width: 100%;
+	padding: 30px 0px;
+    text-align: center;
+	
+}
+
+.featurte-section .title h1{
+	
+font-size: 35px;
+	
+color: #010101;
+	
+font-weight: bold;
+	
+line-height: 40px;
+}
+
+
+.featurte-section .title p{
+	
+font-size: 18px;
+	
+line-height: 28px;
+	
+font-weight: 400;
+	
+color: #82793e;
+}
+.featurte-section .feature-inner{
+	width: 100%;
+}
+.featurte-section .feature-inner .media{
+	padding: 30px;
+}
+.featurte-section .feature-inner .media .fa {
+    font-size: 50px;
+    color: #000;
+}
+
+.featurte-section .feature-inner .media-body h5 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #010101;
+    line-height: 35px;
+}
+.featurte-section .feature-inner .media-body p{
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400px;
+	color: #b5b5b5;
+}
+
+
+/*feature section css end*/
+
+/*footer css start*/
+.footer-section{
+	width: 100%;
+	background: #010101;
+	padding: 80px 0px;
+}
+.footer-section .title{
+	width: 100%;
+	padding: 30px 0px;
+    text-align: center;
+	
+}
+
+.footer-section .title h1{
+	
+font-size: 35px;
+	
+color: #fcdb00;
+	
+font-weight: bold;
+	
+line-height: 40px;
+}
+
+
+.footer-section .title p{
+	
+font-size: 18px;
+	
+line-height: 28px;
+	
+font-weight: 400;
+	
+color: #b5b5b5;
+}
+
+.footer-section .form-inline {
+    justify-content: center;
+}
+
+.footer-section .form-inline .form-group{
+	width: 50%;
+}
+
+.footer-section .form-inline .form-group .form-control {
+    display: block!important;
+    width: 100%!important;
+    font-size: 18px;
+}
+
+.footer-section .btn-primary {
+    color: #010101;
+    background-color: #fcdb00;
+    border-color: #fcdb00;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 30px;
+}
+
+.footer-section .social-icon{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.footer-section .social-icon ul {
+    display: block;
+    list-style: none;
+}
+.footer-section .social-icon ul li {
+    display: inline-block;
+}
+.footer-section .social-icon ul li .fa {
+    font-size: 50px;
+    color: #fcdb00;
+    margin: 30px 15px;
+}
+
+.footer-section .inner-address{
+	width: 100%;
+}
+
+.footer-section .list-group-item {
+    background-color: #010101;
+    border: 0;
+    color: #efefef;
+    padding: 0;
+}
+
+/*footer css end*/
+
+/*********************************************************
+
+************************************************************/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+ .header-section .navbar-light .navbar-nav .nav-link {
+    font-size: 20px;
+    margin-left: 35px;
+    text-align: center;
+    padding: 10px 35px;
+    margin-top: 15px;
+    background: #010101;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.header-section .slider-section .title h1{
+   font-size: 33px;
+	
+}
+
+.header-section .slider-section {
+    padding: 45px 0px;
+}
+ 
+.header-section .slider-section .title .inner-img {
+    margin-top: 20px;
+    width: 90%;
+}
+.featurte-section {
+    padding: 20px 0px;
+}
+.featurte-section .title {
+    padding: 15px 0px 0px;
+    
+}
+
+.featurte-section .feature-inner .media .fa {
+    font-size: 40px;
+    
+}
+
+.featurte-section .feature-inner .media-body h5 {
+    font-size: 20px;
+    
+}
+
+.featurte-section .feature-inner .media-body p {
+    font-size: 14px;
+   
+}
+
+.footer-section {
+    padding: 30px 0px;
+}
+
+.footer-section .col {
+    margin-bottom: -30px;
+    margin-top: -30px;
+}
+
+.footer-section .list-group-item {
+    font-size: 16px;
+}
+
+
+}
+
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .header-section .navbar-light .navbar-nav .nav-link {
+     font-size: 20px;
+    margin-left: 35px;
+    text-align: center;
+    padding: 10px 35px;
+    margin-top: 15px;
+    background: #010101;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.header-section .slider-section .title h1{
+    font-size: 33px;
+	
+}
+
+.header-section .slider-section {
+    padding: 15px 0px;
+}
+
+.header-section .slider-section .title h6 {
+    font-size: 20px;
+    margin: 18px 0px;
+}
+.header-section .slider-section .title p {
+    font-size: 16px;
+    line-height: 26px;
+    
+}
+.header-section .slider-section .title .inner-img {
+    margin-top: 15px;
+    width: 100%;
+    margin-bottom: 35px
+   
+}
+
+.featurte-section {
+    padding: 0px 0px;
+}
+.featurte-section .feature-inner .media .fa {
+    font-size: 35px;
+ 
+}
+.featurte-section .title p {
+    font-size: 14px;
+    padding: 15px;
+}
+.featurte-section .feature-inner .media {
+    padding: 20px;
+    padding-top: 0px;
+}
+.footer-section {
+    padding: 10px 0px;
+}
+
+.footer-section .title h1 {
+    font-size: 30px;
+    
+}
+.footer-section .title p {
+    font-size: 16px;
+    
+}
+.footer-section .title {
+    padding: 20px 0px;
+   
+}
+
+.footer-section .form-inline .form-group {
+    width: 100%;
+}
+
+.footer-section .col {
+    margin-top: -40px;
+    margin-bottom: -50px;
+}
+.footer-section .list-group {
+    margin-bottom: 20px;
+}
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .header-section .navbar-light .navbar-nav .nav-link {
+    font-size: 20px;
+    margin-left: 35px;
+    text-align: center;
+    padding: 10px 35px;
+    margin-top: 15px;
+    background: #010101;
+    color: #fff;
+    margin-right: 30px;
+}
+
+
+.header-section .slider-section .title h1{
+    font-size: 29px;
+}
+  
+.header-section .slider-section {
+     padding: 15px 0px;
+}
+.header-section .slider-section .title h6 {
+    font-size: 20px;
+    margin: 18px 0px;
+}
+.header-section .slider-section .title p {
+    font-size: 16px;
+    line-height: 26px;
+    
+}
+
+.header-section .slider-section .title .inner-img {
+    margin-top: 15px;
+    width: 100%;
+    margin-bottom: 35px
+}
+
+.featurte-section {
+    padding: 0px 0px;
+}
+.featurte-section .feature-inner .media .fa {
+    font-size: 35px;
+   
+}
+.featurte-section .title p {
+    font-size: 14px;
+    padding: 15px;
+}
+
+
+.featurte-section .feature-inner .media {
+    padding: 20px;
+    padding-top: 0px;
+
+}
+
+.footer-section {
+    padding: 10px 0px;
+}
+
+.footer-section .title h1 {
+    font-size: 30px;
+    
+}
+
+.footer-section .title p {
+    font-size: 16px;
+    
+}
+
+.footer-section .title {
+    padding: 20px 0px;
+   
+}
+.footer-section .form-inline .form-group {
+    width: 100%;
+}
+
+.footer-section .col {
+    margin-top: -40px;
+    margin-bottom: -50px;
+}
+.footer-section .list-group {
+    margin-bottom: 20px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
